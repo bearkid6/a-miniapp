@@ -1,0 +1,43 @@
+<!--pages/list4/index.wxml-->
+<!-- <text>pages/shop/index.wxml</text> -->
+<view class="search-container">
+  <block>
+    <image src="/image/搜索.png" mode="aspectFit"/>
+    <input class="search" type="text" placeholder="请输入商品"/>
+    <button type="default">搜索</button>
+  </block>
+</view>
+
+<view class="goods-container">
+<!-- 左侧导航 -->
+  <block>
+    <scroll-view class="left" scroll-y="true">
+      <view class="left-item {{index===activeKey?'active':''}}" wx:for="{{goodsData}}" wx:key="*this" bind:tap="onChange" data-index="{{index}}">
+        {{item.title}}
+      </view>
+    </scroll-view>
+  </block>
+<!-- 右侧内容 -->
+  <block>
+    <scroll-view class="right" scroll-y="true">
+      <view class="right-item" wx:for="{{goodsData}}" wx:for-index="index1" wx:for-item="item1">
+        <view class="right-item-goodsList" >
+          <navigator wx:for="{{item1.products}}" wx:for-index="index2" wx:for-item="item2" wx:key="id">
+            <image src="{{item2.image}}"></image>
+            <view class="goods_name">{{item2.name}}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </block>
+</view>
+
+
+<!-- 底部固定导航 -->
+<!-- <view class="search-container2">
+  <block>
+    <image src="/image/搜索.png" mode="aspectFit"/>
+    <input class="search" type="text" placeholder="请输入商品"/>
+    <button type="primary">结算</button>
+  </block>
+</view> -->

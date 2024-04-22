@@ -1,0 +1,4 @@
+<!--pages/list1/index.wxml-->
+<text>pages/list1/index.wxml</text>
+<view>二维码</view>
+<image src="/image/p2.png" mode=""/>

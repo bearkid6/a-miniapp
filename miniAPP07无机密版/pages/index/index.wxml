@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="img" src="../../image/图1.ico" mode=""/>
+  <navigator url="../list1/index" ><button type="primary">开始游戏抢红包</button></navigator>
+  <navigator url="../list2/index"><button>了解我们</button></navigator>
+  <navigator url="../list3/index"><button>积分榜</button></navigator>
+  
+  
+</view>
+<view class="advertisement-box">
+  <view class="advertisement-text">
+    <text>advertisement</text>
+  </view>
+  <image src="/image/person.png" mode=""/>
+  </view>
+
+
+<!-- <scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="userinfo">
+      <block wx:if="{{canIUseNicknameComp && !hasUserInfo}}">
+        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+          <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+        </button>
+        <view class="nickname-wrapper">
+          <text class="nickname-label">昵称</text>
+          <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" />
+        </view>
+      </block>
+      <block wx:elif="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+        <view wx:else> 请使用2.10.4及以上版本基础库 </view>
+      </block>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+      <navigator url="../test/index"><button>test</button></navigator>
+    </view>
+  </view>
+</scroll-view> -->

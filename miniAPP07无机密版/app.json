@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/test/index",
+    "pages/list1/index",
+    "pages/list2/index",
+    "pages/list3/index",
+    "pages/shop/index",
+    "pages/person/index",
+    "pages/logs/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "玉非遗小程序",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath": "/image/index.png",
+        "selectedIconPath": "/image/index(1).png",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/shop/index",
+        "iconPath": "/image/shop.png",
+        "selectedIconPath": "/image/shop (1).png",
+        "text":"店铺"
+      },
+      {
+        "pagePath":"pages/person/index",
+        "iconPath": "/image/person.png",
+        "selectedIconPath": "/image/person(1).png",
+        "text":"个人"
+      }
+    ]
+  }
+}

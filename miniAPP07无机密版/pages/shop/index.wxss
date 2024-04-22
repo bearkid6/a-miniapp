@@ -1,0 +1,116 @@
+/* pages/list4/index.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.search-container{
+  width: 100%;
+  height: 8%;
+  /* background-color: lightgray; */
+  box-sizing: border-box;
+  line-height: 100%;
+  padding: 5px 0px;
+}
+.search-container>image{
+  /* position: relative; */
+  width: 5%;
+  height: 20px;
+  margin-bottom: 9px;
+  /* border: 1px solid salmon; */
+}
+.search-container>.search{
+  /* background-color: lightcoral; */
+  border: 1px solid lightgreen;
+  display: inline-block;
+  width: 69%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+  text-overflow: ellipsis;
+}
+.search-container>button{
+  float: right;
+  /* display: inline-block; */
+  margin: 0px;
+  width: 25%;
+  height: 100%;
+  padding: 0px;
+  line-height: 34.417px;
+  background-color: lightcyan;
+}
+
+.goods-container{
+  display: flex;
+  width: 100%;
+  height: 590.65px;
+  /* background-color: lightgreen; */
+}
+.active{
+  color: red;
+  border-left: 5rpx solid currentColor;
+}
+.goods-container>.left{
+  width: 25%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+.left .left-item{
+  display: flex;
+  height: 80rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  background-color: lightgray;
+  opacity: 0.5;
+}
+.goods-container .right{
+  box-sizing: border-box;
+  width: 75%;
+  height: 100%;
+  /* background-color: lightskyblue; */
+  padding: 10px;
+}
+.right-item-goodsList image{
+  margin: 0 auto;
+}
+.right-item-goodsList .goods_name{
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  background-color: red;
+}
+
+
+
+.search-container2{
+  position: fixed;
+  background-color: lightyellow;
+  border-radius: 10px;
+  width: 100%;
+  height: 8%;
+}
+.search-container2>image{
+  width: 20%;
+  height: 100%;
+  margin-bottom: 17px;
+}
+.search-container2>.search{
+  /* background-color: lightcoral; */
+  border: 1px solid lightgreen;
+  display: inline-block;
+  width: 69%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+  text-overflow: ellipsis;
+}
+.search-container2>button{
+  float: right;
+  /* display: inline-block; */
+  margin: 0px;
+  width: 25%;
+  height: 100%;
+  padding: 0px;
+  line-height: 51.354px;
+  background-color: lightcyan;
+}
